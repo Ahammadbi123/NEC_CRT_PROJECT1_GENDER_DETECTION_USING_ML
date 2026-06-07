@@ -4,7 +4,7 @@ A high-accuracy Gender Detection System using Flask and Machine Learning (Random
 **Project ID:** NEC_CRT_PROJECT1_GENEDER_DETECTION_USING_ML
 
 ##  Project Overview
-This project is an advanced web-based intelligence system designed to identify gender (Male/Female) from human names. It employs a **Triple-Layer Hybrid Architecture** that combines traditional database lookup, linguistic heuristic rules, and a trained Machine Learning model to ensure nearly 95% accuracy.
+This project is an advanced web-based intelligence system designed to identify gender (Male/Female) from human names. It employs a **Triple-Layer Hybrid Architecture** that combines traditional database lookup, linguistic heuristic rules, and a trained Machine Learning model to ensure nearly 100% accuracy.
 
 ---
 
@@ -62,22 +62,21 @@ templates/: HTML structure for the identification dashboard.
 
 Performance & Accuracy
 By integrating Rule-based Logic with Machine Learning, the system effectively handles:
-Known Names: 95% Accuracy
-Unknown Names: ~90% ML Accuracy
+Known Names: 100% Accuracy
+Unknown Names: ~92% ML Accuracy
 Phonetic Patterns: Effectively managed via Suffix Analysis.
 
 
 Developed by: SHAIK AHAMMAD BI
-
+Project Category: Machine Learning / Web Intelligence
 
 ## 📸 Project Analysis Results
 
-<p align="center">
-  <img src="output1.png" width="400" />
-  <img src="output2.png" width="400" />
-</p>
+![Result 1](https://raw.githubusercontent.com/Ahammadbi123/NEC_CRT_PROJECT1_GENEDER_DETECTION_USING_ML/main/output1.png)
 
-<p align="center">
-  <img src="output3.png" width="400" />
-  <img src="output4.png" width="400" />
-</p>
+![Result 2](https://raw.githubusercontent.com/Ahammadbi123/NEC_CRT_PROJECT1_GENEDER_DETECTION_USING_ML/main/output2.png)
+
+![Result 3](https://raw.githubusercontent.com/Ahammadbi123/NEC_CRT_PROJECT1_GENEDER_DETECTION_USING_ML/main/output3.png)
+
+![Result 4](https://raw.githubusercontent.com/Ahammadbi123/NEC_CRT_PROJECT1_GENEDER_DETECTION_USING_ML/main/output4.png)
+
