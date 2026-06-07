@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Gender Intelligence</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Glows -->
+    <div class="aura-1"></div>
+    <div class="aura-2"></div>
+
+    <div class="main-wrapper">
+        <div class="glass-container">
+            <header>
+                <div class="ai-tag">Machine Learning Engine </div>
+                <h1>GENDER DETECTION <span class="gradient-text">USING ML</span></h1>
+            </header>
+
+            <form action="/predict" method="POST">
+                <div class="input-wrapper">
+                    <input type="text" name="name" placeholder="Type a name..." required autocomplete="off">
+                </div>
+                <button type="submit" class="gradient-btn">ANALYZE GENDER</button>
+            </form>
+
+            {% if prediction %}
+            <div class="result-section fade-in">
+                <div class="separator"></div>
+                <div class="user-meta">
+                    <p>NAME: <strong>{{ name }}</strong></p>
+                </div>
+                
+                <div class="gender-card {{ prediction.lower() }}">
+                    <div class="inner-glow"></div>
+                    <span class="result-text">{{ prediction }}</span>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

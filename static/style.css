@@ -1,0 +1,110 @@
+:root {
+    --bg: #030014;
+    --glass: rgba(15, 15, 25, 0.7);
+    --accent-1: #6366f1; /* Indigo */
+    --accent-2: #a855f7; /* Violet */
+    --cyan: #06b6d4;
+    --male: #38bdf8;
+    --female: #f472b6;
+    --text: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg);
+    font-family: 'Outfit', sans-serif;
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Background Gradients (Mesh Glow) */
+.aura-1 {
+    position: fixed; top: -10%; left: -10%; width: 50%; height: 50%;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    filter: blur(80px); z-index: -1;
+}
+.aura-2 {
+    position: fixed; bottom: -10%; right: -10%; width: 50%; height: 50%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.15) 0%, transparent 70%);
+    filter: blur(80px); z-index: -1;
+}
+
+.main-wrapper { width: 100%; max-width: 420px; padding: 20px; }
+
+.glass-container {
+    background: var(--glass);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 35px;
+    border-radius: 32px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.ai-tag {
+    font-size: 10px; font-weight: 800; text-transform: uppercase;
+    letter-spacing: 2px; color: var(--cyan); margin-bottom: 12px;
+}
+
+h1 { font-size: 28px; font-weight: 800; margin-bottom: 35px; line-height: 1.2; }
+.gradient-text {
+    background: linear-gradient(to right, var(--accent-1), var(--accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input Styles */
+.input-wrapper { margin-bottom: 20px; }
+input {
+    width: 100%; background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 18px 25px; border-radius: 16px;
+    color: white; font-size: 16px; outline: none; transition: 0.3s;
+}
+input:focus {
+    border-color: var(--accent-1);
+    background: rgba(255,255,255,0.07);
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2);
+}
+
+/* Button Styles */
+.gradient-btn {
+    width: 100%; padding: 18px;
+    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+    color: white; border: none; border-radius: 16px;
+    font-weight: 700; font-size: 16px; cursor: pointer; transition: 0.3s;
+}
+.gradient-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.4);
+}
+
+/* Result Design */
+.result-section { margin-top: 40px; }
+.separator { height: 1px; background: rgba(255,255,255,0.1); margin-bottom: 30px; }
+.user-meta { font-size: 14px; color: #aaa; margin-bottom: 15px; }
+
+.gender-card {
+    padding: 20px; border-radius: 20px; font-size: 32px; font-weight: 800;
+    position: relative; overflow: hidden; letter-spacing: 2px;
+}
+.male {
+    color: var(--male);
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.1);
+}
+.female {
+    color: var(--female);
+    background: rgba(244, 114, 182, 0.1);
+    border: 1px solid rgba(244, 114, 182, 0.2);
+    box-shadow: 0 0 30px rgba(244, 114, 182, 0.1);
+}
+
+.fade-in { animation: fadeIn 0.6s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
