@@ -71,9 +71,16 @@ Developed by: SHAIK AHAMMAD BI
 Project Category: Machine Learning / Web Intelligence
 
 
-## 📸 Project Screenshots & Results
+## 📸 Project Analysis Results
 
-| Analysis - Male Result | Analysis - Female Result |
-|:---:|:---:|
-| ![Result 1](output1.png) | ![Result 2](output2.png) |
-| ![Result 3](output3.png) | ![Result 4](output4.png) |
+#### 1. Male Prediction Output
+![Male Result](output1.png)
+
+#### 2. Female Prediction Output
+![Female Result](output2.png)
+
+#### 3. UI Dashboard Overview
+![UI Dashboard](output3.png)
+
+#### 4. Pattern Recognition Logic
+![Logic Analysis](output4.png)
